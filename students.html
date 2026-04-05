@@ -1,31 +1,61 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>SIMS | Student List</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>🎓 Student Information</h1>
+  </header>
+
   <div class="container">
-    <h2>Student Information</h2>
-    <table>
+
+    <!-- Search Bar -->
+    <input type="text" id="search" placeholder="🔍 Search student..." onkeyup="searchStudent()">
+
+    <!-- Table -->
+    <table id="studentTable">
       <tr>
         <th>Roll No</th>
         <th>Name</th>
         <th>Department</th>
         <th>Year</th>
       </tr>
+
       <tr>
         <td>101</td>
         <td>Rahul</td>
         <td>CSE</td>
         <td>3rd</td>
       </tr>
+
       <tr>
         <td>102</td>
         <td>Anita</td>
         <td>ECE</td>
         <td>2nd</td>
       </tr>
+
+      <tr>
+        <td>103</td>
+        <td>Karan</td>
+        <td>IT</td>
+        <td>4th</td>
+      </tr>
+
+      <tr>
+        <td>104</td>
+        <td>Pooja</td>
+        <td>MECH</td>
+        <td>1st</td>
+      </tr>
     </table>
+
   </div>
+
+<script src="script.js"></script>
 </body>
 </html>
