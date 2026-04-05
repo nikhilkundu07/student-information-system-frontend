@@ -1,167 +1,177 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI';
-    background: linear-gradient(to right, #fdfbfb, #ebedee);
+  margin: 0;
+  font-family: 'Segoe UI';
+
+  background: 
+    linear-gradient(rgba(245,247,250,0.85), rgba(228,236,247,0.85)), 
+    url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* Header (dark + gradient) */
+.header {
+  background: linear-gradient(45deg, #232526, #414345);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.7); /* slightly transparent */
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Hover dark effect */
+.navbar a:hover {
+  background: #333;
+  color: white;
+}
+
+/* Logout button */
+.logout {
+  color: #ff4d4d;
+}
+
+/* Main container */
+.container {
+  width: 60%;
+  margin: 40px auto;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.85); /* soft white */
+  backdrop-filter: blur(10px);
+
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+.container h2 {
+  color: #222;
+}
+
+/* Paragraph */
+.container p {
+  color: #555;
+}
+
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+}
+
+nav {
+  background: #34495e;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
 }
 .container {
-    display: flex;
+  width: 400px;
+  margin: 40px auto;
 }
 
-/* Sidebar */
-.sidebar {
-    width: 230px;
-    height: 100vh;
-    border-right: 1px solid #ddd;
-    padding: 20px;
-    background: white;
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.logo {
-    font-family: cursive;
-    font-size: 26px;
-    font-weight: bold;
-    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.sidebar li {
-    list-style: none;
-    margin: 20px 0;
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.sidebar li:hover {
-    color: #d62976;
-}
-
-/* Main */
-.main {
-    flex: 1;
-    padding: 20px;
-    background: #fff;
-}
-
-/* Stories */
-.stories {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.story {
-    text-align: center;
-    cursor: pointer;
-}
-
-.story img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    padding: 2px;
-    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf);
-}
-
-.story p {
-    font-size: 12px;
-}
-
-/* Post */
-.post {
-    width: 320px;
-    margin: 12px auto;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.06);
-    overflow: hidden;
-}
-
-/* Reduce image height */
-.post img {
-    width: 100%;
-    height: 240px;   /* reduced height */
-    object-fit: cover;
-}
-
-/* Reduce padding */
-.post-header {
-    display: flex;
-    align-items: center;
-    padding: 5px 8px;   /* reduce padding */
-    gap: 8px;           /* space between image & name */
-    height: 40px; 
-}
-
-/* Fix profile image */
-.post-header img {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-}
-
-/* Username text */
-.post-header b {
-    font-size: 14px;
-}
-/* Icons tighter */
-.icons {
-    padding: 6px 8px;
-    font-size: 18px;
-}
-
-.icons span {
-    margin-right: 10px;
-}
-
-/* Likes text */
-.post-content,
-.post div {
-    padding: 4px 8px;
-    font-size: 14px;
-}
-
-/* Right Panel */
-.right-panel {
-    width: 300px;
-    padding: 20px;
-    background: #fafafa;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.profile img {
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.suggestion {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px 0;
-}
-
-.suggestion img {
-    border-radius: 50%;
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
 }
 
 button {
-    background: #0095f6;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  background: #2980b9;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
-.post:hover {
-    transform: scale(1.02);
-    transition: 0.3s;
+
+
+/* Header */
+.header {
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  width: 70%;
+  margin: 30px auto;
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+}
+
+/* Search */
+#search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+/* Header row */
+th {
+  background: #333;
+  color: white;
+  padding: 12px;
+}
+
+/* Table rows */
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Zebra effect */
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+/* Hover effect */
+tr:hover {
+  background: #d0e7ff;
+  transition: 0.3s;
 }
