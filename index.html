@@ -1,23 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>SIMS | Login</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Student Information Management System</h2>
-    <form class="card">
-      <label>Username</label>
-      <input type="text" placeholder="Enter username">
 
-      <label>Password</label>
-      <input type="password" placeholder="Enter password">
+<div class="container">
 
-      <button type="submit">Login</button>
-      <p class="link">New user? <a href="register.html">Register</a></p>
-    </form>
-  </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="logo">Instagram</h2>
+        <ul>
+            <li>🏠 Home</li>
+            <li>🔍 Search</li>
+            <li>🎬 Reels</li>
+            <li>💬 Messages</li>
+            <li>❤️ Notifications</li>
+            <li>➕ Create</li>
+            <li>👤 Profile</li>
+        </ul>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <!-- Stories -->
+        <div class="stories">
+            <div class="story"><img src="https://i.pravatar.cc/70?1"><p>You</p></div>
+            <div class="story"><img src="https://i.pravatar.cc/70?2"><p>user1</p></div>
+            <div class="story"><img src="https://i.pravatar.cc/70?3"><p>user2</p></div>
+            <div class="story"><img src="https://i.pravatar.cc/70?4"><p>user3</p></div>
+        </div>
+
+        <!-- Feed -->
+        <div id="feed"></div>
+
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+        <div class="profile">
+            <img src="https://i.pravatar.cc/40">
+            <div>
+                <b>nikhilkundu_nk</b>
+                <p>Nikhil Kumar Kundu</p>
+            </div>
+        </div>
+
+        <h4>Suggested for you</h4>
+
+        <div class="suggestion">
+            <img src="https://i.pravatar.cc/35?5">
+            <span>user_a</span>
+            <button>Follow</button>
+        </div>
+
+        <div class="suggestion">
+            <img src="https://i.pravatar.cc/35?6">
+            <span>user_b</span>
+            <button>Follow</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
